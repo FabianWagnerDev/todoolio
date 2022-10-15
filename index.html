@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>TODOOLIO</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+  <script src="https://kit.fontawesome.com/b94a673b4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header class="main-header">
+    <nav>
+        <div class="brand-logo">TODOOLIO</div>
+        <div class="counter-top-bar">
+            <div class="counter-box counter-hours-box">
+                <div class="counter-hours">00</div>
+                <small>Hours</small>
+            </div>
+            <div class="counter-box counter-minutes-box">
+                <div class="counter-minutes">00</div>
+                <small>Minutes</small>
+            </div>
+            <div class="counter-box counter-seconds-box">
+                <div class="counter-seconds">00</div>
+                <small>Seconds</small>
+            </div>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn-bar"></div>
+        </div>
+    </nav>
+    <div class="mega-menu">
+        <a class="btn btn-remove-last btn-control">Remove Last Item</a>
+        <a class="btn btn-remove-first btn-control">Remove First Item</a>
+        <a class="btn btn-remove-all btn-control">Remove All Items</a>
+        <a class="btn btn-modal-open btn-control">I'm done</a>
+    </div>
+</header>
+
+<main>
+    <!-- Todoolio Section -->
+    <section class="todoolio-section">
+        <div class="start-countdown number3">3</div>
+        <div class="start-countdown number2">2</div>
+        <div class="start-countdown number1">1</div>
+        <div class="start-countdown number0">Go!</div>
+
+        <div class="overlay open"></div>
+        <div class="modal">
+            <img src="img/Party-Time.png" alt="It's Party Time Picture">
+            <h2>Congratulations, You rock!</h2>
+            <p>Congrats the hustle was worth it, all the hard work is done. You have truly mastered your day. For the rest of today feel free to cool down and relax. Unless you want to do some more work ;)</p>
+            <button class="btn-modal-close">Close Popup</button>
+        </div>
+
+        <div id="particles-js"></div>
+        <div id="success-animation-rocket"></div>
+
+        <div class="todoolio-box">
+            <div id="success-animation-star"></div>
+
+            <div class="info-popup-animation">
+                <span class="popup-info">
+                    <img class="infoicon-white" src="img/info-icon-white.svg">
+                </span>
+                <p>Close the menu to launch your animation!</p>
+                <span class="cross popup-cross">
+                    <img class="cross-white" src="img/close-cross-white.svg">
+                </span>
+            </div>
+
+            <h1>MY TO-DO LIST</h1>
+            <div id="todo-list"></div>
+
+            <form id="todo-form">
+                <input type="text" id="todo-input" name="todo-input">
+                <button type="submit" class="btn-submit">Add Task</button>
+            </form>
+        </div>
+
+        <div class="todoolio-progress-box">
+            <div class="todoolio-progress-meter"></div>
+        </div>
+        <div class="progress-percentage-box">
+            <div class="progress-percentage-circle">
+                <span class="progress-percentage">0%</span>
+            </div>
+        </div>
+
+        <div class="todoolio-hours-box">
+            <div class="todoolio-hours-meter"></div>
+        </div>
+        <div class="hours-circle-box">
+            <div class="hours-circle">
+                <span class="hours-left">0h</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-Mail Input Section-->
+
+    <section class="email-section">
+        <h2 class="mainhead"><span class="dual-clr-headline">FREE:</span> 12 MONTHS of TODOOLIO PRO</h2>
+        <h2 class="mainhead hide-on-mobile"><span class="dual-clr-headline">FREE:</span><br> 12 MONTHS TODOOLIO PRO</h2>
+        <div class="subheadline-wrapper">
+            <i class="fas fa-chevron-down"></i>
+            <h3 class="subhead">Enter your email now</h3>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <form action="https://formsubmit.co/fabian.wagner@etronic.life" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input class="email-input" type="email" placeholder="elon@tesla.com" name="email" required>
+            <button type="submit">Send Now</button>
+        </form>
+        <i class="close-icon fas fa-times"></i>
+    </section>
+
+    <!-- FAQ Section -->
+
+    <section class="faq-section">
+
+        <i class="open-icon fas fa-caret-down"></i>
+
+        <div class="faq-switch-container">
+            <div class="faq-switch"></div>
+            <div class="faq-switch-number faq-switch-number1">1</div>
+            <div class="faq-switch-number faq-switch-number2">2</div>
+        </div>
+
+        <div class="faq-container-box">
+
+        <!-- FAQ 1 -->
+
+        <div class="faq-container-content faq-content1">
+            <div class="faq-item" faq-item-open="false">
+                <div class="faq-question">
+                    <h2>Why should I use TODOOLIO ?</h2>
+                     <svg height="36px" width="36px" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>TOODOLIO is your best bet when it comes to handling your daily tasks. It's superior features give you everything you need to master your day and become a superhuman. (Hands down, who doesn't want to be superhuman ?)</p>
+                </div>
+            </div>
+
+            <div class="faq-item" faq-item-open="false">
+                <div class="faq-question">
+                    <h2>Is it really FREE ?</h2>
+                     <svg height="36px" width="36px" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! TOODOLIO is 100% FREE forever. No hidden fees. No credit card needed. Just type in your tasks and you're ready to go. The easy life is just a few keystrokes away. Don't let it slip, act NOW!</p>
+                </div>
+            </div>
+
+            <div class="faq-item" faq-item-open="false">
+                <div class="faq-question">
+                    <h2>I don't understand. Is there a manual ?</h2>
+                     <svg height="36px" width="36px" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>We know that our application can be difficult to use (especially for beginners). Because of this, we are working on a manual that will be released soon. We will notify you here when it goes live.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 2 -->
+
+        <div class="faq-container-content faq-content2">
+            <div class="faq-item" faq-item-open="false">
+                <div class="faq-question">
+                    <h2>Can it help me with my daily tasks ?</h2>
+                     <svg height="36px" width="36px" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>TOODOLIO is just a To-Do-List. At this stage of development TODOOLIO is not able to accomplish your daily tasks. So, until this day, you have to put in some work.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" faq-item-open="false">
+                <div class="faq-question">
+                    <h2>My TODOOLIO doesn't work</h2>
+                     <svg height="36px" width="36px" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Oh okay...yeah then just use a plain old pen and paper for that.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" faq-item-open="false">
+                <div class="faq-question">
+                    <h2>Why am i so damn productive today ?</h2>
+                     <svg height="36px" width="36px" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>No wonder! You are using the world's most famous To-To App. It's like magic - every day TODOOLIO casts a healing spell over millions of confused people.</p>
+                </div>
+            </div>
+        </div> <!-- FAQ Container Content -->
+        </div>  <!-- FAQ Box -->
+    </section>
+
+    <!-- Banner Section -->
+
+    <section class="banner-section">
+        <h2 class="banner-text-one"><span class="double-ticks left-tick">"</span>Todoolio gives me wings - now sky is the Limit<span class="double-ticks right-tick">"</span></h2>
+        <h2 class="banner-text-two"><span class="double-ticks left-tick">"</span>Todoolio is my new religion - praise the holy list<span class="double-ticks right-tick">"</span></h2>
+
+        <div class="subquote">- Literally, every 3rd customer -</div>
+    </section>
+
+    <!-- Testimonial Section -->
+
+    <section class="testi-section">
+        <div class="carousel">
+            <button class="carousel-btn carousel-btn-left btn-is-hidden">
+                <img src="img/arrow_left.svg">
+            </button>
+            <div class="carousel-container">
+                <ul class="carousel-content">
+                    <li class="carousel-slide active-slide">
+                        <img src="img/Lisa-130px.png" alt="Our Customer Lisa">
+                        <h2>"By Far The Best"</h2>
+                        <p>The moment I started using Toodolio my life turned 180deg. You won't believe me but my kitchen cleans itself everyday so easy. This is awesome! And it's by far the best To-Do App on the market. I'm so glad my friends told me about it.</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/Sam-130px.png" alt="Our Customer Sam">
+                        <h2>"Best To-Do App Out There"</h2>
+                        <p>Try it out! You won't regret it. Toodolio is THE SECRET KEY to success. Many famous individuals in history used Toodolio to become rich & famous. But of course no one tells you about their biggest secret.</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/Tom-130px.png" alt="Our Customer Tom">
+                        <h2>"This Is Pure Gold"</h2>
+                        <p>Pure gold. The value this app brings to the table is incredible. You just have to experience maximum productivity once and you're hooked forever! I'm so damn productive every day thanks to this powerful piece of software. Thank god for Toodolio!</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn carousel-btn-right">
+                <img src="img/arrow_right.svg">
+            </button>
+
+            <div class="carousel-point-nav">
+                <button class="carousel-point active-point"></button>
+                <button class="carousel-point"></button>
+                <button class="carousel-point"></button>
+            </div>
+        </div>
+
+        <a href="#" class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </section>
+
+    <!-- Hidden Section -->
+
+    <section class="hidden-section">
+        <span class="time-container">
+            <select name="time-dropdown1">
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+            </select>
+
+            <select name="time-dropdown2">
+                <option value="50">00</option>
+                <option value="51">15</option>
+                <option value="52">30</option>
+                <option value="53">45</option>
+            </select>
+        </span>
+    </section>
+</main>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-logo">TODOOLIO</div>
+    <ul class="footer-links">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <address class="footer-address">TOODOLIO INC., 319 Clematis Street, Suite 777
+        West Palm Beach, FL 33401
+    </address>
+</footer>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
